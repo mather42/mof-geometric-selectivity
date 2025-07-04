@@ -1,0 +1,39 @@
+name: mof-analysis
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python version
+  - python=3.9
+  
+  # Core scientific computing
+  - numpy>=1.21.0
+  - pandas>=1.3.0
+  - scipy>=1.7.0
+  
+  # Machine learning and statistics
+  - scikit-learn>=1.0.0
+  
+  # Visualization
+  - matplotlib>=3.5.0
+  - seaborn>=0.11.0
+  
+  # Development and documentation
+  - jupyter>=1.0.0
+  - ipykernel>=6.0.0
+  - pytest>=6.0.0
+  
+  # Optional: Enhanced features
+  - plotly>=5.0.0
+  
+  # Package management
+  - pip>=21.0.0
+  
+  # Additional pip packages (if needed)
+  - pip:
+    - setuptools>=60.0.0
+
+# Environment variables (optional)
+variables:
+  MOF_DATA_PATH: "./data/"
+  MOF_RESULTS_PATH: "./results/"
