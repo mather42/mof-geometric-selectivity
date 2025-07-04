@@ -7,12 +7,12 @@ Repository containing all scripts, data pointers, and instructions to reproduce 
 
 ## 🚀 Quick Start
 
- 1. Clone the repository  
+ ### 1. Clone the repository  
    ```bash
    git clone https://github.com/<YourUsername>/<repo-name>.git
    cd <repo-name>
 
- 2.	Set up your environment
+### 2.	Set up your environment
 Conda (recommended):
 
 conda env create -f environment.yml
@@ -22,16 +22,14 @@ Or pip:
 
 pip install -r requirements.txt
 
-
- 3.	Run the main analysis
+### 3.	Run the main analysis
 
 python src/mof_analysis.py \
   --geometric data/CRAFTED_geometric.csv \
   --isotherms data/ISOTHERM_FILES_R/ \
   --out results/
 
-
-	4.	Reproduce paper figures
+### 4.	Reproduce paper figures
 
 python examples/reproduce_figures.py
 
@@ -75,13 +73,13 @@ python examples/reproduce_figures.py
 
 ⸻
 
-📜 License
+## 📜 License
 
 This project is licensed under the MIT License.
 
 ⸻
 
-📬 Contact
+## 📬 Contact
 
 Cece Cheng
 Wycombe Abbey School, High Wycombe, UK
