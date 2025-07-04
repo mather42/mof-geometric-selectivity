@@ -17,7 +17,7 @@ cd mof-geometric-selectivity
 Conda (recommended):
 
 conda env create -f environment.yml
-conda activate <env-name>
+conda activate mof-adsorption
 
 Or pip:
 
