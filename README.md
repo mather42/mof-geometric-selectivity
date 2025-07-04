@@ -1,42 +1,34 @@
-# MOF Pore-Size Optimization Analysis
+# MOF Pore Size Optimization Analysis
 
-**“Geometric Predictors of CO₂/N₂ Selectivity in Metal–Organic Frameworks” by Cece Cheng**  
-Repository containing all scripts, data pointers, and instructions to reproduce the analyses and figures from the paper.
+Analysis code for: *"The Effect of Pore Size on the Adsorption of Gases within Metal Organic Frameworks"* (Cheng, 2024)
 
----
+## Quick Start
 
-## 🚀 Quick Start
+```bash
+# Install dependencies
+pip install numpy pandas scipy scikit-learn matplotlib seaborn
 
- ### 1. Clone the repository  
+# Download CRAFTED database to data/ directory
+# Run analysis
+python mof_analysis.py
+```
 
-   git clone https://github.com/mather42/mof-geometric-selectivity.git  
-cd mof-geometric-selectivity
+## Key Results
 
-### 2. Set up your environment 
+**Optimal Pore-Limiting Diameters:**
+- CO₂: 9.16 Å (273K), 8.53 Å (298K), 7.77 Å (323K)
+- N₂: 7.55 Å (273K), 7.93 Å (298K), 8.42 Å (323K)
 
-Conda (recommended):
+**Model Performance:** R² = 0.87 ± 0.03, RMSE = 0.21 mmol g⁻¹
 
-conda env create -f environment.yml
-conda activate mof-adsorption
+## Validation
 
-Or pip:
+```bash
+python validate_results.py
+```
 
-pip install -r requirements.txt
+Expected output: All optimal PLDs within ±0.5 Å of paper values.
 
-### 3.	Run the main analysis
-
-python src/mof_analysis.py \
-  --geometric data/CRAFTED_geometric.csv \
-  --isotherms data/ISOTHERM_FILES_R/ \
-  --out results/
-
-### 4.	Reproduce paper figures
-
-python examples/reproduce_figures.py
-
-
-
-⸻
 
 ## 📂 Repository Structure
 
@@ -50,14 +42,14 @@ python examples/reproduce_figures.py
 │   └── ISOTHERM_FILES_R/
 ├── src/                      # Core analysis code
 │   ├── mof_analysis.py
-
+|   |--validate_results.py   # Verification against paper results  
+|   |-- reproduce_figures.py
 
 ⸻
 
 ## 📊 Data & Code Availability
 	•	CRAFTED database: https://doi.org/10.5281/zenodo.8190237
 	•	CoRE MOF 2019: https://doi.org/10.5281/zenodo.3370144
-
 	•	Environment specification:
 	•	Conda: environment.yml
 	•	pip: requirements.txt
