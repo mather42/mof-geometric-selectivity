@@ -1,0 +1,29 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VSCode and PyCharm settings
+.vscode/
+.idea/
+
+# Data files (large datasets not tracked)
+data/CRAFTED_geometric.csv
+data/ISOTHERM_FILES_R/
+
+# Results and outputs
+results/
+*.png
+*.pdf
+
+# System files
+.DS_Store
+Thumbs.db
