@@ -35,8 +35,8 @@ Expected output: All optimal PLDs within ±0.5 Å of paper values.
 
 mof-pore-optimization/
 ├── mof_analysis-2.py          # Main analysis code
-├── validate_results.py      # Validation script  
-├── README.md                # Concise documentation
+├── validation_script.py 
+├── README.md               
 ├── requirements.txt         # Dependencies
 ├── LICENSE                  # MIT license
 └── data/                    # CRAFTED database (user downloads)
