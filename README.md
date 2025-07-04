@@ -8,11 +8,12 @@ Repository containing all scripts, data pointers, and instructions to reproduce 
 ## 🚀 Quick Start
 
  ### 1. Clone the repository  
-   ```bash
+
    git clone https://github.com/<YourUsername>/<repo-name>.git
    cd <repo-name>
 
-### 2.	Set up your environment
+### 2. Set up your environment 
+
 Conda (recommended):
 
 conda env create -f environment.yml
