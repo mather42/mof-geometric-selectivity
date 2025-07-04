@@ -41,11 +41,10 @@ Expected output: All optimal PLDs within ±0.5 Å of paper values.
 │   ├── CRAFTED_geometric.csv
 │   └── ISOTHERM_FILES_R/
 ├── src/                      # Core analysis code
-│   ├── mof_analysis.py
-|   |--validate_results.py   # Verification against paper results  
-|   |-- reproduce_figures.py
+├── mof_analysis-2.py          
+├── validate_results.py      # Results verification  
+└── reproduce_figures.py     # Simple figure reproduction          
 
-⸻
 
 ## 📊 Data & Code Availability
 	•	CRAFTED database: https://doi.org/10.5281/zenodo.8190237
