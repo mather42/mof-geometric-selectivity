@@ -32,18 +32,17 @@ Expected output: All optimal PLDs within ±0.5 Å of paper values.
 
 ## 📂 Repository Structure
 
-<repo-name>/
-├── environment.yml           # Conda environment specification
-├── requirements.txt          # pip install specification
-├── LICENSE                   # License file
-├── README.md                 # This file
-├── data/                     # Input data (not checked in)
-│   ├── CRAFTED_geometric.csv
-│   └── ISOTHERM_FILES_R/
-├── src/                      # Core analysis code
-├── mof_analysis-2.py          
-├── validate_results.py      # Results verification  
-└── reproduce_figures.py     # Simple figure reproduction          
+
+mof-pore-optimization/
+├── mof_analysis-2.py          # Main analysis code
+├── validate_results.py      # Validation script  
+├── reproduce_figures.py     # Figure reproduction
+├── README.md                # Concise documentation
+├── requirements.txt         # Dependencies
+├── LICENSE                  # MIT license
+└── data/                    # CRAFTED database (user downloads)
+    ├── CRAFTED_geometric.csv
+    └── ISOTHERM_FILES_R/
 
 
 ## 📊 Data & Code Availability
