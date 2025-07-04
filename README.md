@@ -39,7 +39,7 @@ python examples/reproduce_figures.py
 
 ⸻
 
-📂 Repository Structure
+## 📂 Repository Structure
 
 <repo-name>/
 ├── environment.yml           # Conda environment specification
@@ -65,7 +65,7 @@ python examples/reproduce_figures.py
 
 ⸻
 
-📊 Data & Code Availability
+## 📊 Data & Code Availability
 	•	CRAFTED database: https://doi.org/10.5281/zenodo.8190237
 	•	CoRE MOF 2019: https://doi.org/10.5281/zenodo.3370144
 	•	This repository: https://github.com//
